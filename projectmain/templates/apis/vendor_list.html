@@ -1,0 +1,31 @@
+{% extends "../base.html" %}
+{% block title %}Vendors List Title{% endblock %}
+{% block content %}
+<h2> Vendors List</h2>
+<table id="vendors">
+    <tr>
+        <th>Vendor Name</th>
+        <th>Vendor url</th>
+        <th>Vendor service_email</th>
+        <th>Vendor service_phone</th>
+        <th>Vendor image</th>
+        <th>Vendor terms</th>
+        <th>Vendor bill_country</th>
+        <th>Vendor country_of_residence</th>
+        <th>Vendor activation_date</th>
+    </tr>
+    {% for vendors in object_list %}
+    <tr>
+        <td>{{ vendors.name }}</td>
+        <td>{{ vendors.url }}</td>
+        <td>{{ vendors.service_email }}</td>
+        <td>{{ vendors.service_phone }}</td>
+        <td>{{ vendors.image }}</td>
+        <td>{{ vendors.terms }}</td>
+        <td>{{ vendors.bill_country }}</td>
+        <td>{{ vendors.country_of_residence }}</td>
+        <td>{{ vendors.activation_date }}</td>
+    </tr>
+    {% endfor %}
+    {% endblock %}
+</table>

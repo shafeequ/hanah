@@ -1,0 +1,36 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.block-center {
+    /*max-width: 100%;*/
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+}
+
+#vendors {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#vendors td, #vendors th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#vendors tr:nth-child(even){background-color: #f2f2f2;}
+
+#vendors tr:hover {background-color: #ddd;}
+
+#vendors th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4889af;
+  color: white;
+}
